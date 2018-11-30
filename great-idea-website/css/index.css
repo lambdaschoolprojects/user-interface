@@ -152,6 +152,10 @@ header a {
     z-index: -1;
 }
 
+.main-text {
+    font-family: 'Rajdhani', sans-serif;
+}
+
 .section1 {
     border-top: 1px solid black;
     width: 100%;
