@@ -72,25 +72,67 @@ body {
 
 header top-nav {
 	position: relative;
-	width: 90%;
-	margin-bottom: 10px;
+	width: 60%;
+	/*margin-bottom: 25px;*/
 }
 
 nav {
 	display: inline-block;
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 }
 
 header a {
-	display: inline;
+	display: inline-block;
 	color: gray;
 	text-decoration: none;
 	margin-right: 100px;
 }
 
 .logo {
-	position: absolute;
-	top: 0;
-	right: 0;
+	/*position: absolute;*/
+    display: inline-block;
+	/*top: 0;*/
+	/*right: 0;*/
+}
+
+.blurb-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.blurb-text-div {
+    display: inline-block;
+    width: 50%;
+    height: 380px;
+    float: left;
+    padding: 40px;
+}
+
+.blurb-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 75px;
+    width: 100%;
+}
+
+.blurb-button-div {
+    width: 100%;
+    margin-top:10px;
+}
+
+.blurb-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.blurb-img-div {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 50%;*/
+    width: 50%;
+    height: 380px;
+    float: left;
+    display: inline-block;
 }
