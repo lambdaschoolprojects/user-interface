@@ -79,6 +79,10 @@ h1, h2, h3, h4, h5 {
     border: 1px solid black;
     height: 50px;
     background-color: cadetblue;
+    -moz-box-shadow:0 0 8px 0 black;
+    -webkit-box-shadow:0 0 8px 0 black;
+    box-shadow:0 0 8px 0 black;
+    z-index: 10;
 }
 
 .top-nav {
@@ -96,6 +100,10 @@ header a {
 	color: lightgray;
 	text-decoration: none;
 	margin-right: 25px;
+}
+
+header a:hover {
+    color: white;
 }
 
 .logo {
@@ -136,6 +144,11 @@ header a {
     background-color: white;
     border: 1px solid black;
     padding: 5px 50px;
+}
+
+.blurb-button:hover {
+    background-color: linen;
+    transform: rotate(1deg);
 }
 
 .blurb-img-div {
