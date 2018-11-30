@@ -191,7 +191,7 @@ header a {
 
 .services, .products, .vision {
     width: 33%;
-    margin-right: 5px;
+    padding-right: 5px;
     float: left;
 }
 
