@@ -147,8 +147,10 @@ header a:hover {
 }
 
 .blurb-button:hover {
-    background-color: linen;
-    transform: rotate(1deg);
+    animation: tremble;
+    animation-duration: .25s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 .blurb-img-div {
@@ -219,4 +221,16 @@ address {
 .copyright {
     text-align: center;
     margin: 20px;
+}
+
+@keyframes tremble {
+    0% { transform: rotate(0deg) }
+    15% { transform: rotate(1deg) }
+    25% { transform: rotate(0deg) }
+    35% { transform: rotate(-1deg) }
+    50% { transform: rotate(0deg) }
+    65% { transform: rotate(1deg) }
+    75% { transform: rotate(0deg) }
+    85% { transform: rotate(-1deg) }
+    100% { transform: rotate(0deg) }
 }
