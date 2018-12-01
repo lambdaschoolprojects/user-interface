@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-.container {
+.container, .top-nav {
 	width: 880px;
 	margin: 0 auto;
 }
@@ -79,15 +79,11 @@ h1, h2, h3, h4, h5 {
     border: 1px solid black;
     height: 50px;
     background-color: cadetblue;
-    -moz-box-shadow:0 0 8px 0 black;
-    -webkit-box-shadow:0 0 8px 0 black;
-    box-shadow:0 0 8px 0 black;
-    z-index: 10;
-}
 
-.top-nav {
-    width: 880px;
-    margin: 0 auto;
+    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    -moz-box-shadow:0 0 5px 0 black;
+    -webkit-box-shadow:0 0 5px 0 black;
+    box-shadow:0 0 5px 0 black;
 }
 
 nav {
@@ -96,7 +92,6 @@ nav {
 }
 
 header a {
-	display: inline-block;
 	color: lightgray;
 	text-decoration: none;
 	margin-right: 25px;
@@ -107,7 +102,6 @@ header a:hover {
 }
 
 .logo {
-    display: inline-block;
     margin: 5px;
     float: right;
 }
@@ -179,16 +173,13 @@ header a:hover {
     height: 100px;
 }
 
-.features {
-    width: 50%;
-    padding-right: 10px;
-    float: left;
+.features, .about {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    z-index: -1;
 }
 
-.about {
-    width: 50%;
-    float: left;
-}
 
 .middle-img {
     display: block;
@@ -205,9 +196,9 @@ header a:hover {
 }
 
 .services, .products, .vision {
-    width: 33%;
-    padding-right:10px;
-    float: left;
+    width: 32%;
+    padding-right: 10px;
+    display: inline-block;
 }
 
 address {
@@ -225,12 +216,8 @@ address {
 
 @keyframes tremble {
     0% { transform: rotate(0deg) }
-    15% { transform: rotate(1deg) }
-    25% { transform: rotate(0deg) }
-    35% { transform: rotate(-1deg) }
+    25% { transform: rotate(1deg) }
     50% { transform: rotate(0deg) }
-    65% { transform: rotate(1deg) }
-    75% { transform: rotate(0deg) }
-    85% { transform: rotate(-1deg) }
+    75% { transform: rotate(-1deg) }
     100% { transform: rotate(0deg) }
 }
